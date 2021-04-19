@@ -897,7 +897,7 @@
      -webkit-transition: all 0.3s ease 0s;
      transition: all 0.3s ease 0s;
      visibility: hidden;
-     width: 240px;
+     width: 200px;
      z-index: 999;
      background: #fff;
      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
@@ -1065,18 +1065,17 @@ font-weight: bold;
 
 
 
- .text-bg a {
-     font-size: 16px;
-border: #1a1b19 solid 1px;
-background-color: #1a1b19;
-color: #fff;
-padding: 9px 0px;
-max-width: 171px;
-width: 100%;
-display: inline-block;
-text-align: center;
+.text-bg a {
+    font-size: 16px;
+    border: #1a1b19 solid 1px;
+    background-color: #1a1b19;
+    color: #fff;
+    padding: 9px 0px;
+    max-width: 171px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 
-;
 margin-right: 10px;
  }
  .text-bg a:hover {
@@ -1590,5 +1589,33 @@ transition: all 0.3s ease-in;
  .copyright a:hover {
      color: #ff7e1d ;
 }
+
+#menu ul {
+    background: #8AD385;
+    width: 50px;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    right: 0;
+    
+}
+#menu li {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+    
+}
+#menu li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+    }
+
+ #menu li:hover {
+        background: #CDE2CD;
+    }
 /** end footer **/
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/

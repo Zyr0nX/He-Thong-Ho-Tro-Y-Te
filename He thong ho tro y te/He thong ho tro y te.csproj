@@ -121,9 +121,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +137,7 @@
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\jquery-ui.css" />
     <Content Include="Content\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Content\css\login.css" />
     <Content Include="Content\css\meanmenu.css" />
     <Content Include="Content\css\nice-select.css" />
     <Content Include="Content\css\normalize.css" />
@@ -192,16 +195,17 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Infor.cshtml" />
+    <Content Include="Views\Home\News.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\ShreeTemplate.cshtml" />
     <Content Include="Views\Shared\Ex.cshtml" />
     <Content Include="Views\Home\Shop.cshtml" />
     <Content Include="Views\Home\HeChuyenGia.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

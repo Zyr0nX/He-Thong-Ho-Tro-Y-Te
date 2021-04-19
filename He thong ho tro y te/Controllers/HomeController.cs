@@ -19,7 +19,7 @@ namespace He_thong_ho_tro_y_te.Controllers
 
             return View();
         }
-        public ActionResult Infor()
+        public ActionResult News()
         {
         return View();
         }
@@ -40,5 +40,6 @@ namespace He_thong_ho_tro_y_te.Controllers
 
             return View();
         }
+       
     }
 }
