@@ -1,4 +1,6 @@
-﻿
+﻿@using Microsoft.AspNet.Identity;
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,24 +67,32 @@
                                             <li>
                                                 <img src="~/Content/icon/icon_b.png" alt="#" />
                                                 <ul id="menu" @*class="dropdown-menu"*@ style="right:0;">
-                                                    <li>
-                                                        <a href="~/User/Login">
 
-                                                            Đăng nhập
-                                                        </a>
-                                                    </li>
-                                                    <li>
+                                                    @if (Request.IsAuthenticated)
+                                                    {
+                                                        <li>
 
-                                                        <a href="~/User/Login">Đăng ký </a>
-                                                    </li>
-                                                    <li>
+                                                            <a href="~/">Quản trị </a>
+                                                        </li>
+                                                        <li>
 
-                                                        <a href="~/User/Login">Quản trị </a>
-                                                    </li>
-                                                    <li>
+                                                            <a href="~/User/Login">Đăng xuất </a>
+                                                        </li>
 
-                                                        <a href="~/User/Login">Đăng xuất </a>
-                                                    </li>
+                                                    }
+                                                    else
+                                                    {
+                                                        <li>
+                                                            <a href="~/User/Login">
+                                                                Đăng nhập
+                                                            </a>
+                                                        </li>
+                                                        <li>
+
+                                                            <a href="~/User/Login">Đăng ký </a>
+                                                        </li>
+                                                    }
+
                                                 </ul>
                                 </li>
                                 </ul>
