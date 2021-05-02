@@ -1,16 +1,12 @@
 ﻿
 @{
-    ViewBag.Title = "Quản lý người dùng";
+    ViewBag.Title = "SuaSP";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<h2>Index</h2>
-
-
-
 @using He_thong_ho_tro_y_te.Models
-@*@model List<ShopWatches.Models.TaiKhoan>*@
-@*<link href="~/Content/dataTables.bootstrap.css" rel="stylesheet" />*@
+@model List<He_thong_ho_tro_y_te.Models.User>
+<link href="~/Content/dataTables.bootstrap.css" rel="stylesheet" />
 <h1 class="page-header">
     <a href="/QLTaiKhoan/ThemTk" class="btn btn-outline btn-primary">Thêm</a>
 </h1>
@@ -27,7 +23,7 @@
         </thead>
         <tbody>
 
-            @*@for (int i = 0; i < Model.Count; i++)
+            @for (int i = 0; i < Model.Count; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -47,7 +43,7 @@
                         <td>@Model[i].TenTaiKhoan</td>
                         <td>@Model[i].MatKhau</td>
                         <td><a href="/QLTaiKhoan/SuaTk/@Model[i].MaTaiKhoan" class="btn btn-outline btn-primary">Sửa</a></td>
-                        <td><a href="/QLTaiKhoan/XoaTk/@Model[i].MaTaiKhoan" class="btn btn-outline btn-primary">Xóa</a></td>*@
+                        <td><a href="/QLTaiKhoan/XoaTk/@Model[i].MaTaiKhoan" class="btn btn-outline btn-primary">Xóa</a></td>
 
                     </tr>
                 }
@@ -55,10 +51,4 @@
         </tbody>
     </table>
 </div>
-
-@*<script src="~/Scripts/jquery-1.10.2.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-
-    <script src="~/Scripts/sb-admin-2.js"></script>*@
-
 

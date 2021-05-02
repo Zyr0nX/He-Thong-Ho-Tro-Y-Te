@@ -1,4 +1,4 @@
-﻿@using Microsoft.AspNet.Identity;
+﻿@*@using Microsoft.AspNet.Identity;*@
 
 
 <!DOCTYPE html>
@@ -94,10 +94,10 @@
                                                     }
 
                                                 </ul>
-                                </li>
-                                </ul>
-                                </nav>
-                            </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -106,11 +106,12 @@
         </div>
     </header>
     @*end header inner
-    end header*@
+        end header*@
     @RenderBody();
+    @RenderSection("scripts", required: false)
     @*contact
-    end contact
-    footer*@
+        end contact
+        footer*@
     <footr>
         <div class="footer ">
             <div class="container">
@@ -173,7 +174,7 @@
         </div>
     </footr>
     @*end footer
-    Javascript files*@
+        Javascript files*@
     <script src="~/Content/js/jquery.min.js"></script>
     <script src="~/Content/js/popper.min.js"></script>
     <script src="~/Content/js/bootstrap.bundle.min.js"></script>

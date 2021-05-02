@@ -4,11 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace He_thong_ho_tro_y_te.Controllers
+
+namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
 {
-    public class AdminController : Controller
+    public class QLHangController : Controller
     {
-        // GET: Admin
+        // GET: QLHang
         public ActionResult Index()
         {
             return View();
