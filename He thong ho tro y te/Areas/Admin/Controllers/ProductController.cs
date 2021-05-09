@@ -12,7 +12,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
 {
     public class ProductController : Controller
     {
-        public YTeDbContext db = new YTeDbContext();
+        
         // GET: QLSanPham
         public ActionResult Delete(int id)
         {

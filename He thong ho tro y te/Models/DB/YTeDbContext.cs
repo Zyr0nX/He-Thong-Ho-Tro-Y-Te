@@ -121,7 +121,7 @@ namespace He_thong_ho_tro_y_te.Models.DB
 
             modelBuilder.Entity<User>()
                 .Property(e => e.Password)
-                .IsUnicode(false);
+               .IsUnicode(false);
 
             modelBuilder.Entity<User>()
                 .Property(e => e.GroupID)

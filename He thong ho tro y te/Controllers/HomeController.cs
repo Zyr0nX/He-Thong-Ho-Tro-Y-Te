@@ -32,8 +32,6 @@ namespace He_thong_ho_tro_y_te.Controllers
             return View();
         }
 
-
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

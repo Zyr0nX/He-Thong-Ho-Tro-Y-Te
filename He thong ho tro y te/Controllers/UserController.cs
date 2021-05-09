@@ -15,22 +15,22 @@ namespace He_thong_ho_tro_y_te.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult LoginAction(User us, string returnUrl)
-        {    
-            if ("admin".Equals(us.username) && "123456".Equals(us.pwd))
-            {
-                ViewBag.ReturnUrl = returnUrl;
-                Session["username"] = us.username;
-                return RedirectToAction("Index", "Home");
+        //[HttpPost]
+        //public ActionResult LoginAction(User us, string returnUrl)
+        //{    
+        //    if ("admin".Equals(us.username) && "123456".Equals(us.pwd))
+        //    {
+        //        ViewBag.ReturnUrl = returnUrl;
+        //        Session["username"] = us.username;
+        //        return RedirectToAction("Index", "Home");
 
 
-            }
-            else
-            {
-                ModelState.AddModelError("", "Tên đăng nhập hoặc mật khẩu không đúng.");
-                return RedirectToAction("Login", "User");
-            }
-        }
+        //    }
+        //    else
+        //    {
+        //        ModelState.AddModelError("", "Tên đăng nhập hoặc mật khẩu không đúng.");
+        //        return RedirectToAction("Login", "User");
+        //    }
+        //}
     }
 }

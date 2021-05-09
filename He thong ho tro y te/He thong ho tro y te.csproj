@@ -200,6 +200,7 @@
     <Compile Include="Models\DAO\CategoryDAO.cs" />
     <Compile Include="Models\DAO\ProductDAO.cs" />
     <Compile Include="Models\DAO\UserDAO.cs" />
+    <Compile Include="Models\DAO\UserGroupDAO.cs" />
     <Compile Include="Models\DB\About.cs" />
     <Compile Include="Models\DB\Bill.cs" />
     <Compile Include="Models\DB\Category.cs" />
@@ -214,7 +215,7 @@
     <Compile Include="Models\DB\UserGroup.cs" />
     <Compile Include="Models\DB\YTeDbContext.cs" />
     <Compile Include="Models\DTO\ProductDTO.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\DTO\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -3507,6 +3508,9 @@
     <Content Include="CKFinderScripts\lang\bs.json" />
     <Content Include="CKFinderScripts\lang\bg.json" />
     <Content Include="CKFinderScripts\lang\az.json" />
+    <Content Include="Areas\Admin\Views\User\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -3545,7 +3549,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

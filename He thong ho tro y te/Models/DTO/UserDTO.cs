@@ -1,38 +1,33 @@
-namespace He_thong_ho_tro_y_te.Models.DB
-{
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
-    [Table("User")]
-    public partial class User
+namespace He_thong_ho_tro_y_te.Models.DTO
+{
+    public class UserDTO
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
-        [Required]
-        [StringLength(50)]
+      
         public string UserName { get; set; }
 
-        [Required]
-        [StringLength(32)]
+     
         public string Password { get; set; }
 
-        [StringLength(20)]
+        
         public string GroupID { get; set; }
 
-        [StringLength(50)]
+       
         public string Name { get; set; }
 
-        [StringLength(50)]
+        
         public string Address { get; set; }
 
-        [StringLength(50)]
+       
         public string Email { get; set; }
 
-        [StringLength(50)]
+       
         public string Phone { get; set; }
 
         public bool? Sex { get; set; }
@@ -41,15 +36,14 @@ namespace He_thong_ho_tro_y_te.Models.DB
 
         public DateTime? CreatedDate { get; set; }
 
-        [StringLength(50)]
+       
         public string CreatedBy { get; set; }
 
         public DateTime? ModifiedDate { get; set; }
 
-        [StringLength(250)]
+      
         public string ModifiedBy { get; set; }
 
         public bool? Status { get; set; }
-        //public virtual UserGroup UserGroup { get; set; }
     }
 }

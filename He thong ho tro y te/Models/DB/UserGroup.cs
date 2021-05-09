@@ -9,6 +9,10 @@ namespace He_thong_ho_tro_y_te.Models.DB
     [Table("UserGroup")]
     public partial class UserGroup
     {
+        //public UserGroup()
+        //{
+        //    UserGroups = new HashSet<User>();
+        //}
         [StringLength(20)]
         public string Id { get; set; }
 
