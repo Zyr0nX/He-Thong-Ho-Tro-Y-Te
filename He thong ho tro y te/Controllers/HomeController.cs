@@ -40,6 +40,12 @@ namespace He_thong_ho_tro_y_te.Controllers
 
             return View();
         }
-       
+        public ActionResult Test()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
     }
 }

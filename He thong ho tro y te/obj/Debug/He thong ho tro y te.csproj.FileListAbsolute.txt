@@ -155,4 +155,42 @@ D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongH
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\obj\Debug\He thong ho tro y te.csproj.CopyComplete
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\obj\Debug\He thong ho tro y te.dll
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\obj\Debug\He thong ho tro y te.pdb
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\EntityFramework.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\EntityFramework.SqlServer.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\EntityFramework.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\EntityFramework.SqlServer.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\PagedList.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\PagedList.Mvc.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\PagedList.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\PagedList.Mvc.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Autofac.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Config.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Core.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Host.Owin.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.FileSystem.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.FileSystem.Local.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\ImageProcessor.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Microsoft.Owin.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Owin.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Pri.LongPath.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Net.Http.Extensions.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Net.Http.Formatting.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Net.Http.Primitives.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Threading.Tasks.Extensions.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.ValueTuple.dll
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Autofac.pdb
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Autofac.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Config.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Core.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Host.Owin.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.FileSystem.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\CKSource.FileSystem.Local.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\ImageProcessor.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\Microsoft.Owin.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Threading.Tasks.Extensions.xml
+D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.ValueTuple.xml
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\obj\Debug\He thong ho tro y te.csprojAssemblyReference.cache
