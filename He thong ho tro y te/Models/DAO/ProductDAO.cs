@@ -98,6 +98,19 @@ namespace He_thong_ho_tro_y_te.Models.DAO
         {
             return db.Products.ToList();
         }
+        public List<Product> ListNewProduct(int top)
+        {
+            return db.Products.OrderByDescending(x => x.CreatedTime).Take(top).ToList();
+        }
+        //public List<Product> ListFeatureProduct(int top)
+        //{
+        //    return db.Products.Where(x => x.TopHot != null && x.TopHot > DateTime.Now).OrderByDescending(x => x.CreatedDate).Take(top).ToList();
+        //}
+        public List<Product> ListRelatedProducts(int productId)
+        {
+            var product = db.Products.Find(productId);
+            return db.Products.Where(x => x.Id != productId && x.CategoryID == product.CategoryID).ToList();
+        }
 
 
     }

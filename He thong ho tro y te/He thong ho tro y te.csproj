@@ -193,11 +193,14 @@
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ShopController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DAO\CategoryDAO.cs" />
+    <Compile Include="Models\DAO\GioHangHoa.cs" />
+    <Compile Include="Models\DAO\HangHoaBan.cs" />
     <Compile Include="Models\DAO\ProductDAO.cs" />
     <Compile Include="Models\DAO\UserDAO.cs" />
     <Compile Include="Models\DAO\UserGroupDAO.cs" />
@@ -3357,6 +3360,8 @@
     <Content Include="Content\js\plugin.js" />
     <Content Include="Content\js\popper.min.js" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Shop\css\font-awesome.css" />
+    <Content Include="Content\Shop\css\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -3543,8 +3548,8 @@
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
-    <Content Include="Views\Shared\AdminLTELayout.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Shop\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

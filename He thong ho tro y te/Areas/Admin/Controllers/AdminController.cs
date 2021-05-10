@@ -32,7 +32,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
             if (dao.checkLogin(username, password))
             {
                 Session["username"] = username;
-                return Redirect("Index");
+                return Redirect("~/Home/Index");
 
             }
             else return Redirect("Login");

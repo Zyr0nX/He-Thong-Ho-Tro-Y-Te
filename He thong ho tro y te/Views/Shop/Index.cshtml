@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/HomeTemplate.cshtml";
+}
+@model PagedList.IPagedList<He_thong_ho_tro_y_te.Models.DB.Product>
+@using PagedList.Mvc
+
+
+
+<body>
+    @foreach (var item in Model)
+    {
+
+        <div class="cart-grid" id="cart-1">
+            <div class="img">
+                <img src="~/Asset/Photo/@item.Image" alt="img">
+            </div>
+            <ul class="info">
+                <li>$60.00</li>
+                <li class="right-text">@item.Price</li>
+            </ul>
+            <div class="snipcart-details ">
+                <form action="#" method="post">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="w3l_item" value="Striped Top ">
+                    <input type="hidden" name="amount" value="25.00">
+                    <input type="hidden" name="item_name" value="Product #001" />
+                    <button type="submit" class="button w3l-cart" data-id="cart-1">add to cart</button>
+                </form>
+            </div>
+        </div>
+    }
+
+</body>
+<style>
+    .cart-grid {
+        width: 20%;
+        float: left;
+        box-shadow: 5px 10px 10px 0px rgba(216, 216, 216, 0.78);
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .cart-grid:hover img {
+        -webkit-transform: translateY(0px) scale(0.8);
+        -moz-transform: translateY(0px) scale(0.8);
+        -ms-transform: translateY(0px) scale(0.8);
+        -o-transform: translateY(0px) scale(0.8);
+        transform: translateY(0px) scale(0.8);
+    }
+
+    .img img {
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+    }
+</style>
+

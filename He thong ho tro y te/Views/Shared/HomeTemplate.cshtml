@@ -61,35 +61,35 @@
                                             <li> <a href="~/Home/Index">Trang chủ</a> </li>
                                             <li> <a href="~/Home/About">Giới thiệu</a> </li>
                                             <li> <a href="News">Tin tức</a> </li>
-                                            <li> <a href="~/Home/Shop">Quầy thuốc </a> </li>
+                                            <li> <a href="~/Shop/Index">Quầy thuốc </a> </li>
                                             <li> <a href="~/Home/HeChuyenGia">Tư vấn </a> </li>
                                             <li> <a href="~/Home/Contact">Liên hệ</a> </li>
                                             <li>
                                                 <img src="~/Content/icon/icon_b.png" alt="#" />
                                                 <ul id="menu" @*class="dropdown-menu"*@ style="right:0;">
 
-                                                    @if (Request.IsAuthenticated)
+                                                    @if (Session["username"] == null)
                                                     {
+                                                    <li>
+                                                        <i class="fa fa-user fa-fw"></i> @Session["username"] <i class="fa fa-caret-down"></i>
+                                                        <a href="~/Admin/Admin/Login">
+                                                            Đăng nhập
+                                                        </a>
+                                                    </li>
                                                         <li>
-
-                                                            <a href="~/">Quản trị </a>
+                                                           <a href="~/Admin/Admin/Register">Đăng ký </a>
                                                         </li>
-                                                        <li>
 
-                                                            <a href="~/User/Login">Đăng xuất </a>
-                                                        </li>
 
                                                     }
                                                     else
                                                     {
                                                         <li>
-                                                            <a href="~/Admin/Admin/Login">
-                                                                Đăng nhập
-                                                            </a>
+
+                                                            <a href="~/Admin/Admin/Index">Quản trị </a>
                                                         </li>
                                                         <li>
-
-                                                            <a href="~/Admin/Admin/Register">Đăng ký </a>
+                                                            <a href="~/Admin/Admin/Logout">Đăng xuất </a>
                                                         </li>
                                                     }
 
