@@ -113,14 +113,16 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
         //}
 
 
-        public ActionResult Index(string searchString, int categoryID = 0, int PageNum = 1, int PageSize = 5)
+        public ActionResult Index(string searchString,/*string searchString2, string searchString3,*/ int categoryID = 0, int PageNum = 1, int PageSize = 5)
         {
             var dao = new ProductDAO();
-           var model = dao.ListProductPage(searchString, PageNum, PageSize);
+           var model = dao.ListProductPage(searchString,/*searchString2,searchString3,*/ PageNum, PageSize);
 
            ViewBag.SearchString = searchString;
+           //ViewBag.SearchString2 = searchString;
+           //ViewBag.SearchString3 = searchString;
 
-           return View(model);
+            return View(model);
         }
         //public ActionResult Index(string searchString, int categoryID = 0)
         //{

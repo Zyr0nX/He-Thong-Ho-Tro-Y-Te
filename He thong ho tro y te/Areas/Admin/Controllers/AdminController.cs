@@ -23,7 +23,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
         public ActionResult Logout()
         {
             Session["username"] = null;
-            return Redirect("Login");
+            return Redirect("~/Home/Index");
         }
         [HttpPost]
         public ActionResult Login(string username, string password)

@@ -72,14 +72,18 @@ namespace He_thong_ho_tro_y_te.Models.DAO
             {
                 get { return db.Products;}
             }
-        public IEnumerable<Product> ListProductPage(string searchString,   int Pagenum, int Pagesize)
+        public IEnumerable<Product> ListProductPage(string searchString, /*string searchString2,string searchString3, */ int Pagenum, int Pagesize)
             {
             IQueryable<Product> model = db.Products;
             if (!string.IsNullOrEmpty(searchString))
             {
-                model = model.Where(a => a.Name.Contains(searchString) );
+                model = model.Where(x => x.Name.Contains(searchString) || x.Name.Contains(searchString));
             }
-            return db.Products.OrderByDescending(a => a.Id).ToPagedList(Pagenum, Pagesize);
+            //if (!string.IsNullOrEmpty(searchString2) || !string.IsNullOrEmpty(searchString3))
+            //{
+            //    model = model.Where(x => x.Name.Contains(searchString) || x.Name.Contains(searchString));
+            //}
+            return model.OrderByDescending(x => x.Id).ToPagedList(Pagenum, Pagesize);
         }
 
 

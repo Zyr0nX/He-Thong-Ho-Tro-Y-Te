@@ -28,10 +28,18 @@
                     {
                         <div class="row form-group">
                             <div class="col-lg-12">
-                                <div class="col-md-4">
+                                <label class="col-lg-1 row">Từ khóa</label>
+                                <div class="col-md-3">
                                     <input type="text" value="@ViewBag.SearchString" class="form-control" name="searchString" />
-                                     @*@Html.DropDownList("categoryID", "All")*@
-                                </div>
+                                 </div>
+                                    <label class="col-lg-1">Giá khoảng</label>
+                                    <div class="col-md-2">
+                                        <input type="text" value="@ViewBag.SearchString2" class="form-control" name="searchString2" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="text" value="@ViewBag.SearchString3" class="form-control" name="searchString3" />
+                                    </div>
+                                
                                 <div class="col-md-4">
                                     <button type="submit" class="btn btn-success">Tìm kiếm</button>
                                 </div>
@@ -84,7 +92,7 @@
                     </table>
 
                     <div class="col-sm-7">
-                     @Html.PagedListPager(Model, PageNum => Url.Action("Index", new { @searchString = ViewBag.SearchString , PageNum }))
+                        @Html.PagedListPager(Model, PageNum => Url.Action("Index", new { PageNum, @searchString = @ViewBag.SearchString }))
                       
                     </div>
 
