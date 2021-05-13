@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Sửa sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/AdminLTELayout.cshtml";
 }
 
@@ -13,7 +13,7 @@
     <input type="hidden" id="id" name="id" value="@product.Id" />
     <div class="box box-default">
         <div class="box-header with-border">
-            <h3 class="box-title">Thêm mới </h3>
+            <h3 class="box-title">Chỉnh sửa </h3>
 
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -31,7 +31,8 @@
                     <!-- /.form-group -->
                     <div class="form-group">
                         <label for="exampleInputEmail1">Giá</label>
-                        <input type="text" class="form-control" name="price" id="price" placeholder="Giá sản phẩm" value="@product.Price">
+                        
+                        <input type="text" class="form-control" name="price" id="price" placeholder="Giá sản phẩm" value="@Convert.ToInt32(product.Price)">
                     </div>
                 </div>
                 <!-- /.col -->
@@ -85,7 +86,7 @@
 
     </div>
     <div class="box-footer">
-        <input type="submit" class="btn btn-primary" value="Thêm" />
+        <input type="submit" class="btn btn-primary" value="Sửa" />
     </div>
 </form>
 

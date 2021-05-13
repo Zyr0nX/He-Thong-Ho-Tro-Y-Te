@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using He_thong_ho_tro_y_te.Models.DAO;
 using He_thong_ho_tro_y_te.Models.DB;
 using System.IO;
-
+using He_thong_ho_tro_y_te.Models.DTO;
 
 namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
 {
@@ -21,10 +21,10 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
             return Redirect("~/Admin/Product/Index");
         }
         public ActionResult Detail(int id)
-        {
-            var product = new ProductDAO().Detail(id);
-            
-            return View(product);
+        {   
+            Product product = new ProductDAO().Detail(id);
+            ProductDTO productDTO = new ProductDTO(product.Id, product.Name,product.Price,product.Amount,product.Image, product.CategoryID);
+            return View(productDTO);
         }
 
         public ActionResult Add()
@@ -63,7 +63,8 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
                     image.SaveAs(path);
 
                     product.Image = image.FileName;
-                    dao.Add(product);
+                    
+                    dao.Edit(product);
                 }
                 return RedirectToAction("Index");
             }
@@ -104,24 +105,21 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
         }
 
 
-        //public ActionResult Index(string searchString, int PageNum = 1, int PageSize = 2)
-        //{
-        //    var dao = new ProductDAO();
-        //  var model = dao.ListProductPage(searchString, PageNum, PageSize);
-        //   ViewBag.SearchString = searchString;
-        //   return View(model);
-        //}
 
 
-        public ActionResult Index(string searchString,/*string searchString2, string searchString3,*/ int categoryID = 0, int PageNum = 1, int PageSize = 5)
+        public ActionResult Index(string searchString,string searchString2, string searchString3,string searchCat, int categoryID = 0, int PageNum = 1, int PageSize = 5)
         {
+            // var dao = new ProductDAO();
+            //var model = dao.ListProductPage(searchString,searchString2,searchString3, searchCat,PageNum, PageSize);
             var dao = new ProductDAO();
-           var model = dao.ListProductPage(searchString,/*searchString2,searchString3,*/ PageNum, PageSize);
-
+            var model = dao.lstjoin(searchString, searchString2, searchString3, searchCat, PageNum, PageSize);
+            CategoryDAO dao2 = new CategoryDAO();
+             ViewBag.cat = dao2.ListCate();
            ViewBag.SearchString = searchString;
-           //ViewBag.SearchString2 = searchString;
-           //ViewBag.SearchString3 = searchString;
-
+           ViewBag.SearchString2 = searchString2;
+           ViewBag.SearchString3 = searchString3;
+            ViewBag.SearchCat = searchCat;
+            
             return View(model);
         }
         //public ActionResult Index(string searchString, int categoryID = 0)

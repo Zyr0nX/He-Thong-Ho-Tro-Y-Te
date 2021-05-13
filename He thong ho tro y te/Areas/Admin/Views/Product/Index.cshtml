@@ -3,8 +3,9 @@
     ViewBag.Title = "Index";
     Layout = "~/Areas/Admin/Views/Shared/AdminLTELayout.cshtml";
 }
-@model PagedList.IPagedList<He_thong_ho_tro_y_te.Models.DB.Product>
+@model PagedList.IPagedList<He_thong_ho_tro_y_te.Models.DTO.ProductDTO>
 @using PagedList.Mvc
+
 
 
 
@@ -18,9 +19,6 @@
                 </div>
             </div>
             <!-- /search form -->
-            
-
-            
             <!-- /.box-header -->
             <div class="box-body">
                 <div class="panel-body">
@@ -29,19 +27,29 @@
                         <div class="row form-group">
                             <div class="col-lg-12">
                                 <label class="col-lg-1 row">Từ khóa</label>
-                                <div class="col-md-3">
+                                <div class="col-md-3 row">
                                     <input type="text" value="@ViewBag.SearchString" class="form-control" name="searchString" />
-                                 </div>
-                                    <label class="col-lg-1">Giá khoảng</label>
-                                    <div class="col-md-2">
-                                        <input type="text" value="@ViewBag.SearchString2" class="form-control" name="searchString2" />
-                                    </div>
-                                    <div class="col-md-2">
-                                        <input type="text" value="@ViewBag.SearchString3" class="form-control" name="searchString3" />
-                                    </div>
+                                </div>
+                                <label class="col-lg-1">Giá khoảng</label>
+                                <div class="col-md-2">
+                                    <input type="text" value="@ViewBag.SearchString2" class="form-control" name="searchString2" />
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text" value="@ViewBag.SearchString3" class="form-control" name="searchString3" />
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-control" value="@ViewBag.SearchCat" name="searchCat" >
+                                        <option >Loại sản phẩm</option>
+                                        @foreach (var item in ViewBag.cat)
+                                        {
+                                            <option >@item.CategoryName</option>
+                                        }
+                                    </select>
+                                </div>
                                 
+
                                 <div class="col-md-4">
-                                    <button type="submit" class="btn btn-success">Tìm kiếm</button>
+                                    <button type="submit" class="btn btn-success" style="width: 21%; float: right; margin: 2px 5px 0;">Tìm kiếm</button>
                                 </div>
                             </div>
                         </div>
@@ -54,37 +62,39 @@
                                 <th>Tên</th>
                                 <th>Giá</th>
                                 <th>Số lượng</th>
+                                <th>Loại dược phẩm</th>
                                 <th>Ảnh</th>
                                 <th>Chức năng</th>
-                                
+
                             </tr>
                         </thead>
                         <tbody>
                             @for (var i = 0; i < Model.Count; i++)
                             {
                                 var item = Model.ElementAt(i);
-                            <tr>
-                                <td>@(i + 1)</td>
-                                <td>
-                                    @item.Name
-                                </td>
-                                <td>@item.Price</td>
-                                <td>@item.Amount</td>
-                                <td><img height="50px" src="~/Asset/Photo/@item.Image" /></td>
-                                <td>
-                                    <a href="~/Admin/Product/Edit/@item.Id">
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                    </a>
-                                    <a href="~/Admin/Product/Detail/@item.Id">
-                                        <span class="glyphicon glyphicon-list"></span>
-                                    </a>
+                                <tr>
+                                    <td>@(i + 1)</td>
+                                    <td>
+                                        @item.Name
+                                    </td>
+                                    <td>@item.Price</td>
+                                    <td>@item.Amount</td>
+                                    <td>@item.category_name</td>
+                                    <td><img height="50px" src="~/Asset/Photo/@item.Image" /></td>
+                                    <td>
+                                        <a href="~/Admin/Product/Edit/@item.Id">
+                                            <span class="glyphicon glyphicon-edit"></span>
+                                        </a>
+                                        <a href="~/Admin/Product/Detail/@item.Id">
+                                            <span class="glyphicon glyphicon-list"></span>
+                                        </a>
 
-                                    <a href="~/Admin/Product/Delete/@item.Id" onclick="return confirm('Bạn chắc chắn muốn xóa?')">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                    </a>
-                                </td>
-                                
-                            </tr>
+                                        <a href="~/Admin/Product/Delete/@item.Id" onclick="return confirm('Bạn chắc chắn muốn xóa?')">
+                                            <span class="glyphicon glyphicon-trash"></span>
+                                        </a>
+                                    </td>
+
+                                </tr>
                             }
 
                         </tbody>
@@ -92,8 +102,8 @@
                     </table>
 
                     <div class="col-sm-7">
-                        @Html.PagedListPager(Model, PageNum => Url.Action("Index", new { PageNum, @searchString = @ViewBag.SearchString }))
-                      
+                        @Html.PagedListPager(Model, PageNum => Url.Action("Index", new { PageNum, @searchString = @ViewBag.SearchString, @searchString2 = @ViewBag.SearchString2, @searchString3 = @ViewBag.SearchString3 ,@searchCat=@ViewBag.SearchCat}))
+
                     </div>
 
                 </div>
@@ -101,14 +111,10 @@
             <!-- /.box-body -->
 
         </div>
-            <!-- /.box -->
-            <!-- /.box -->
-        </div>
-        <!-- /.col -->
-
+        <!-- /.box -->
+        <!-- /.box -->
     </div>
-    <!-- /.row -->
+    <!-- /.col -->
 
-
-
-
+</div>
+<!-- /.row -->

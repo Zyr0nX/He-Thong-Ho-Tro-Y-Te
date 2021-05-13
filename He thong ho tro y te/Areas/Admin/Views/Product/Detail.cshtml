@@ -1,5 +1,4 @@
-﻿@model He_thong_ho_tro_y_te.Models.DB.Product
-
+﻿@model He_thong_ho_tro_y_te.Models.DTO.ProductDTO
 @{
     ViewBag.Title = "Detail";
     Layout = "~/Areas/Admin/Views/Shared/AdminLTELayout.cshtml";
@@ -20,13 +19,6 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Code)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Code)
-        </dd>
 
         <dt>
             @Html.DisplayNameFor(model => model.Amount)
@@ -44,29 +36,19 @@
             @Html.DisplayFor(model => model.Price)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ImportPrice)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ImportPrice)
-        </dd>
 
         <dt>
             @Html.DisplayNameFor(model => model.Image)
         </dt>
 
+
         <dd>
             @Html.DisplayFor(model => model.Image)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.MoreImages)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.MoreImages)
-        </dd>
+        <div class="grid images_3_of_2">
+        <a href="#"><img height="50px" src="~/Asset/Photo/@Model.Image" /></a> 
+        </div>
+        
 
         <dt>
             @Html.DisplayNameFor(model => model.Describe)
@@ -76,85 +58,20 @@
             @Html.DisplayFor(model => model.Describe)
         </dd>
 
+
         <dt>
-            @Html.DisplayNameFor(model => model.Detail)
+            @Html.DisplayNameFor(model => model.category_name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Detail)
+            @Html.DisplayFor(model => model.category_name)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CategoryID)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.CategoryID)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.MetaTitel)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.MetaTitel)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedTime)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedTime)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedBy)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedBy)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ModifiedBy)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ModifiedBy)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.MetaKeywords)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.MetaKeywords)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.MetaDescriptions)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.MetaDescriptions)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ViewCount)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ViewCount)
-        </dd>
 
     </dl>
 </div>

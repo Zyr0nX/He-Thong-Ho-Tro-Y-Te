@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using He_thong_ho_tro_y_te.Models.DB;
 using PagedList;
+using He_thong_ho_tro_y_te.Models.DTO;
 namespace He_thong_ho_tro_y_te.Models.DAO
 {
     public class ProductDAO
@@ -45,10 +46,12 @@ namespace He_thong_ho_tro_y_te.Models.DAO
                 product.ModifiedBy = pro.ModifiedBy;
                 product.ViewCount = pro.ViewCount;
                 db.SaveChanges();
-                
+             }
+        }
+        public Product Detail(int id)
+        {
+            return db.Products.Find(id);
 
-
-            }
         }
         public void Delete(int id)
         {
@@ -72,32 +75,88 @@ namespace He_thong_ho_tro_y_te.Models.DAO
             {
                 get { return db.Products;}
             }
-        public IEnumerable<Product> ListProductPage(string searchString, /*string searchString2,string searchString3, */ int Pagenum, int Pagesize)
+        public IEnumerable<Product> ListProductPage(string searchString, string searchString2,string searchString3,string searchCat,  int Pagenum, int Pagesize)
             {
             IQueryable<Product> model = db.Products;
+
             if (!string.IsNullOrEmpty(searchString))
-            {
-                model = model.Where(x => x.Name.Contains(searchString) || x.Name.Contains(searchString));
+            {   
+                model = model.Where(x => x.Name.Contains(searchString) || x.Price.ToString().Contains(searchString) );
             }
-            //if (!string.IsNullOrEmpty(searchString2) || !string.IsNullOrEmpty(searchString3))
-            //{
-            //    model = model.Where(x => x.Name.Contains(searchString) || x.Name.Contains(searchString));
-            //}
+            else if (!string.IsNullOrEmpty(searchString2) && !string.IsNullOrEmpty(searchString3))
+            {
+                int tu = Int32.Parse(searchString2);
+                int mau= Int32.Parse(searchString3);
+               model = model.Where(x => x.Amount>= tu || x.Amount<=mau);
+                
+            }
+            else if (!string.IsNullOrEmpty(searchCat))
+            {
+                model = model.Where(x => x.Name.Contains(searchCat));
+
+
+            }
             return model.OrderByDescending(x => x.Id).ToPagedList(Pagenum, Pagesize);
+        }
+        public IEnumerable<ProductDTO> lstjoin(string searchString, string searchString2, string searchString3, string searchCat,  int Pagenum, int Pagesize)
+        {
+            //var lst = db.Database.SqlQuery<ProductDTO>("select " +
+            //    "pro.Id as id, " +
+            //    "pro.Name as name, " +
+            //    "pro.Price as price, " +
+            //    "pro.Amount as amount, " +
+            //    "pro.Describe as description, " +
+            //    "pro.image as photo, " +
+            //    "pro.Categoryid as idcategory, " +
+            //    "c.CategoryName as category_name " +
+            //    "from Product pro left join Category c on pro.CategoryID = c.CategoryID"
+            //    );
+            var lst = from p in db.Products
+                      join c in db.Categories on p.CategoryID equals c.CategoryID
+                      select new ProductDTO()
+                      {
+                          Id = p.Id,
+                          Name = p.Name,
+                          Price = p.Price,
+                          Amount = p.Amount,
+                          Describe=p.Describe,
+                          Image =p.Image,
+                          CategoryID =p.CategoryID,
+                          category_name=c.CategoryName
+                      };
+           
+           if (!string.IsNullOrEmpty(searchString))
+            {
+                lst = lst.Where(x => x.Name.Contains(searchString) || x.Price.ToString().Contains(searchString));
+                
+            }
+            else if (!string.IsNullOrEmpty(searchString2) && !string.IsNullOrEmpty(searchString3))
+            {
+              int tu = Int32.Parse(searchString2);
+               int den = Int32.Parse(searchString3);
+                lst = lst.Where(x => x.Price >= tu && x.Price <= den);
+
+
+            }
+            else if (!string.IsNullOrEmpty(searchCat))
+            {
+               lst = lst.Where(x => x.category_name.Contains(searchCat));
+
+            }
+
+             return lst.OrderByDescending(x=>x.Id).ToPagedList(Pagenum,Pagesize);
+           
+            
         }
 
 
         //public  FindById(int id)
         //{
 
-        //    return db.Products.Find(id);
+        //   return db.Products.Find(id);
 
         //}
-        public Product Detail(int id)
-        {
-            return db.Products.Find(id);
-
-        }
+        
         public List<Product> List()
         {
             return db.Products.ToList();

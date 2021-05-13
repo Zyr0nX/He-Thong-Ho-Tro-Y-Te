@@ -13,10 +13,10 @@ namespace He_thong_ho_tro_y_te.Controllers
     {
         // GET: Shop
         
-        public ActionResult Index(string searchString, int categoryID = 0, int PageNum = 1, int PageSize = 5)
+        public ActionResult Index(string searchString,string searchString2, string searchString3,string searchCat, int categoryID = 0, int PageNum = 1, int PageSize = 5)
         {
             var dao = new ProductDAO();
-            var model = dao.ListProductPage(searchString, PageNum, PageSize);
+            var model = dao.ListProductPage(searchString,searchString2,searchString3,searchCat, PageNum, PageSize);
 
             ViewBag.SearchString = searchString;
 
