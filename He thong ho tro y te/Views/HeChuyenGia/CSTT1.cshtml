@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "CSTT1";
+    Layout = "~/Views/Shared/HomeTemplate.cshtml";
+}
+
+<form action="CSTT1" method="post" role="form">
+    
+      
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 pa_right">
+                    <div class="testomonial_img">
+                        <figure><img src="~/Content/images/unnamed.jpg" alt="#" /></figure>
+                        <i><img src="~/Content/images/test_con.png" alt="#" /></i>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="cross_inner">
+                        <h2>Hệ chuyên gia<br><strong class="ornage_color">Chẩn đoán</strong></h2>
+
+                        <p>
+                            Bệnh nhân có xuất hiện triệu chứng sau đây không?
+                        </p>
+                        <p>
+                            Có trên 1 đợt sưng đau một khớp ngoại vi hay bao hoạt dịch
+                        </p>
+
+                        <input type="radio" id="dau_vao1" name="Dauvao" value="dau_vao1" @ViewBag.Dauvao1>
+                        <label for="dau_vao1">Có</label><br>
+                        <input type="radio" id="dau_vao0" name="Dauvao" value="dau_vao0" @ViewBag.Dauvao0>
+                        <label for="dau_vao0">Không</label><br>
+
+                    </div>
+                    
+                    <div class="box-footer">
+                        <input type="submit" class="btn btn-primary" value="Chẩn đoán" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="images_box">
+                        <figure><img src="~/Content/images/bao_hoat_dich.png" style="float:right;"></figure>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+   
+        
+</form>

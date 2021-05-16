@@ -32,9 +32,7 @@
 
 <body class="main-layout">
     <!-- loader  -->
-    <div class="loader_bg">
-        <div class="loader"><img src="~/Content/images/loading.gif" alt="#" /></div>
-    </div>
+    
     <!-- end loader -->
     <!-- header -->
     <header>
@@ -60,9 +58,9 @@
                                         <ul class="menu-area-main">
                                             <li> <a href="~/Home/Index">Trang chủ</a> </li>
                                             <li> <a href="~/Home/About">Giới thiệu</a> </li>
-                                            <li> <a href="News">Tin tức</a> </li>
+                                            <li> <a href="~/Home/News">Tin tức</a> </li>
                                             <li> <a href="~/Shop/Index">Quầy thuốc </a> </li>
-                                            <li> <a href="~/Home/HeChuyenGia">Tư vấn </a> </li>
+                                            <li> <a href="~/Home/HeChuyenGia">Chẩn đoán </a> </li>
                                             <li> <a href="~/Home/Contact">Liên hệ</a> </li>
                                             <li>
                                                 <img src="~/Content/icon/icon_b.png" alt="#" />
@@ -70,20 +68,25 @@
 
                                                     @if (Session["username"] == null)
                                                     {
-                                                    <li>
-                                                        <i class="fa fa-user fa-fw"></i> @Session["username"] <i class="fa fa-caret-down"></i>
-                                                        <a href="~/Admin/Admin/Login">
-                                                            Đăng nhập
-                                                        </a>
-                                                    </li>
                                                         <li>
-                                                           <a href="~/Admin/Admin/Register">Đăng ký </a>
+
+                                                            <a href="~/Admin/Admin/Login">
+                                                                Đăng nhập
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="~/Admin/Admin/Register">Đăng ký </a>
                                                         </li>
 
 
                                                     }
                                                     else
                                                     {
+                                                    <li>
+                                                        <i class="fa fa-user fa-fw"></i>
+                                                        @Session["username"]
+                                                        <i class="fa fa-caret-down"></i>
+                                                    </li>
                                                         <li>
 
                                                             <a href="~/Admin/Admin/Index">Quản trị </a>
