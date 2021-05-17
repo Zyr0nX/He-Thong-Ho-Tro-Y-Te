@@ -193,4 +193,3 @@ D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongH
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Runtime.CompilerServices.Unsafe.xml
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Threading.Tasks.Extensions.xml
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.ValueTuple.xml
-D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\obj\Debug\He thong ho tro y te.csprojAssemblyReference.cache

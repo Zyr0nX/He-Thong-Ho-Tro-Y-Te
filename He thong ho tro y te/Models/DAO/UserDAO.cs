@@ -14,12 +14,7 @@ namespace He_thong_ho_tro_y_te.Models.DAO
         {
             db = new YTeDbContext();
         }
-        //public int Insert(User entity)
-        //{
-        //    db.Users.Add(entity);
-        //    db.SaveChanges();
-        //    return entity.ID;
-        //}
+        
         public bool checkLogin(string username, string password)
         {
             bool check = false;
@@ -29,25 +24,6 @@ namespace He_thong_ho_tro_y_te.Models.DAO
         }
 
 
-        //public List<User> ListUser()
-        //{
-        //    return db.Users.ToList();
-        //}
-        //public void Add(User entity)
-        //{
-        //    db.Users.Add(entity);
-        //    db.SaveChanges();
-
-        //}
-        //public User Detail(int id)
-        //{
-        //    return db.Users.Find(id);
-
-        //}
-        //public List<User> List()
-        //{
-        //    return db.Users.ToList();
-        //}
         public void Delete(int id)
         {
             User pro = db.Users.Find(id);
@@ -58,6 +34,7 @@ namespace He_thong_ho_tro_y_te.Models.DAO
             }
 
         }
+        
         public void Add(User user)
         {
             db.Users.Add(user);

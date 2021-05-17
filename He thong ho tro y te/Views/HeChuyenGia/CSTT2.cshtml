@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "CSTT2";
+    Layout = "~/Views/Shared/HomeTemplate.cshtml";
+}
+
+
+
+<form action="CSTT2" method="post" role="form">
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 pa_right">
+            <div class="testomonial_img">
+                <figure><img src="~/Content/images/unnamed.jpg" alt="#" /></figure>
+                <i><img src="~/Content/images/test_con.png" alt="#" /></i>
+            </div>
+        </div>
+        <div class="col">
+            <div class="cross_inner">
+                <h3>Hệ chuyên gia<br><strong class="ornage_color">Chẩn đoán</strong></h3>
+                <p>
+                    Bệnh nhân có xuất hiện triệu chứng sau đây không?
+                </p>
+                <p>
+                    Phát hiện tinh thể urat trong dịch khớp hoặc hạt tophi
+                </p>
+                <input type="radio" id="vang1" name="vang" value="vang1" @ViewBag.vang1>
+                <label for="vang1">Có</label><br>
+                <input type="radio" id="vang0" name="vang" value="vang0" @ViewBag.vang2>
+                <label for="vang0">Không</label><br>
+
+            </div>
+           
+               
+                <div class="box-footer">
+                    <a href="CSTT1" class="btn">Quay lại</a>
+                    <input type="submit" class="btn btn-primary" value="Chẩn đoán" />
+                </div>
+            
+            
+        </div>
+        <div class="col">
+            <div class="images_box">
+                <figure><img src="~/Content/images/urat.png" style="float:right;"></figure>
+            </div>
+        </div>
+
+    </div>
+</form>

@@ -61,7 +61,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
                     image.SaveAs(path);
 
                     user.ModifiedBy = image.FileName;
-                    dao.Add(user);
+                    dao.Edit(user);
                 }
                 return RedirectToAction("Index");
             }
