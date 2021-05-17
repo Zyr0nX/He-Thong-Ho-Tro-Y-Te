@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "CSTT4";
+    Layout = "~/Views/Shared/HomeTemplate.cshtml";
+}
+
+
+<form action="CSTT4" method="post" role="form">
+
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 pa_right">
+            <div class="testomonial_img">
+                <figure><img src="~/Content/images/unnamed.jpg" alt="#" /></figure>
+                <i><img src="~/Content/images/test_con.png" alt="#" /></i>
+            </div>
+        </div>
+        <div class="col">
+            <div class="cross_inner">
+                <h3>Hệ chuyên gia<br><strong class="ornage_color">Chẩn đoán</strong></h3>
+                <p>
+                    Bệnh nhân xuất hiện những triệu chứng nào @Session["lamsa"]
+                </p>
+                <input type="checkbox" id="axit" name="axit" value="axit">
+                <label for="axit">Xét nghiệm nồng độ axit uric trong máu</label><br>
+
+                <input type="radio" id="axit1" name="axit" value="axit1">
+                <label for="axit1">"<" 240 mmol/l (4 mg/dl)</label><br>
+                <input type="radio" id="axit2" name="axit" value="axit2">
+                <label for="axit2">240-360 mmol/l (4-6 mg/dl)</label><br>
+                <input type="radio" id="axit3" name="axit" value="axit3">
+                <label for="axit3">360-4800 mmol/l (6-8 mg/dl)</label><br>
+                <input type="radio" id="axit4" name="axit" value="axit4">
+                <label for="axit4">480-600 mmol/l (8-10 mg/dl)</label><br>
+                <input type="radio" id="axit5" name="axit" value="axit5">
+                <label for="axit5">"≥" 600 mmol/l (10 mg/dl)</label><br>
+
+
+                <input type="checkbox" id="xn" name="xn" value="xn">
+                <label for="xn">Xét nghiệm dịch khớp không phát hiện tinh thể urat</label><br>
+
+                <input type="checkbox" id="ha1" name="ha1" value="ha1">
+                <label for="ha1">Siêu âm có dấu hiệu đường đôi</label><br>
+                <input type="checkbox" id="ha2" name="ha2" value="ha2">
+                <label for="ha2">DECT (chụp cắt lớp vi tính năng lượng kép) scanner: bắt màu urat đặc biệt</label><br>
+                <input type="checkbox" id="xquang" name="xquang" value="xquang">
+                <label for="xquang">Xuất hiện hình ảnh bào mòn xương ở bàn tay hoặc cánh tay trên ảnh chụp Xquang</label><br>
+
+
+
+            </div>
+            <div></div>
+            
+            <div class="box-footer">
+                <a href="CSTT3" class="btn">Quay lại</a>
+                <input type="submit" class="btn btn-primary" value="Chẩn đoán" />
+            </div>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="images_box">
+                <figure><img src="~/Content/images/bao_mon_xuong.jpg" style="float:right;" id="baomonxuong"></figure>
+                <label for="tophi">Hình ảnh bào mòn xương</label><br />
+                <figure><img src="~/Content/images/duong_doi.jpg" style="float:right;" id="duongdoi"></figure>
+                <label for="duongdoi">Hình ảnh siêu âm có dấu đường đôi</label><br />
+            </div>
+        </div>
+       
+    
+</form>

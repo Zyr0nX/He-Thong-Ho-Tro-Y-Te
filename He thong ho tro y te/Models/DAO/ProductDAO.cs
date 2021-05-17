@@ -127,17 +127,45 @@ namespace He_thong_ho_tro_y_te.Models.DAO
            
            if (!string.IsNullOrEmpty(searchString))
             {
-                lst = lst.Where(x => x.Name.Contains(searchString) || x.Price.ToString().Contains(searchString));
-                
+                lst = lst.Where(x => x.Name.Contains(searchString) || x.Price.ToString().Contains(searchString)|| x.category_name.Contains(searchString));
+                if (!string.IsNullOrEmpty(searchString2) && !string.IsNullOrEmpty(searchString3))
+                {
+                    int tu = Int32.Parse(searchString2);
+                    int den = Int32.Parse(searchString3);
+                    lst = lst.Where(x => x.Price >= tu && x.Price <= den);
+
+
+                }
             }
-            else if (!string.IsNullOrEmpty(searchString2) && !string.IsNullOrEmpty(searchString3))
+           else if (!string.IsNullOrEmpty(searchString2))
             {
-              int tu = Int32.Parse(searchString2);
-               int den = Int32.Parse(searchString3);
-                lst = lst.Where(x => x.Price >= tu && x.Price <= den);
+                int tu = Int32.Parse(searchString2);
+                lst = lst.Where(x => x.Price >= tu );
+                if (!string.IsNullOrEmpty(searchString2) && !string.IsNullOrEmpty(searchString3))
+                {
+                    
+                    int den = Int32.Parse(searchString3);
+                    lst = lst.Where(x => x.Price >= tu && x.Price <= den);
 
+
+                }
 
             }
+            else if (!string.IsNullOrEmpty(searchString3))
+            {
+                int mau = Int32.Parse(searchString3);
+                lst = lst.Where(x => x.Price <= mau);
+                if (!string.IsNullOrEmpty(searchString2) && !string.IsNullOrEmpty(searchString3))
+                {
+                    int tu = Int32.Parse(searchString2);
+                    int den = Int32.Parse(searchString3);
+                    lst = lst.Where(x => x.Price >= tu && x.Price <= den);
+
+
+                }
+
+            }
+
             else if (!string.IsNullOrEmpty(searchCat))
             {
                lst = lst.Where(x => x.category_name.Contains(searchCat));

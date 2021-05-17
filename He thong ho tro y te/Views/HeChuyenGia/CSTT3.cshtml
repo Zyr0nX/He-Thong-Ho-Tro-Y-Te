@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "CSTT3";
+    Layout = "~/Views/Shared/HomeTemplate.cshtml";
+}
+
+
+
+<form action="CSTT3" method="post" role="form">
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 pa_right">
+            <div class="testomonial_img">
+                <figure><img src="~/Content/images/unnamed.jpg" alt="#" /></figure>
+                <i><img src="~/Content/images/test_con.png" alt="#" /></i>
+            </div>
+        </div>
+        <div class="col">
+            <div class="cross_inner">
+                <h3>Hệ chuyên gia<br><strong class="ornage_color">Chẩn đoán</strong></h3>
+                <p>
+                    Bệnh nhân xuất hiện những triệu chứng nào
+                </p>
+                <input type="checkbox" id="a1" name="a1" value="a1">
+                <label for="a1">Viêm khớp cổ chân hoặc khớp bàn ngón chân</label><br>
+                <input type="checkbox" id="a2" name="a2" value="a2">
+                <label for="a2">Viêm khớp bàn ngón chân cái</label><br>
+
+                <input type="checkbox" id="a3" name="a3" value="a3">
+                <label for="a3">Đỏ khớp</label><br>
+                <input type="checkbox" id="a4" name="a4" value="a4">
+                <label for="a5">Ấn vào khớp viêm có điểm đau</label><br>
+                <input type="checkbox" id="a5" name="a5" value="a5">
+                <label for="a5">Khó khăn khi đi lại hoặc vận động</label><br>
+
+                <input type="checkbox" id="a6" name="a6" value="a6">
+                <label for="a6">Có một đợt đau điển hình với thời gian đau tối đa "<" 24h, khỏi triệu chứng đau "≤" 14 ngày, khỏi hoàn toàn giữa các đợt </label><br>
+                <input type="checkbox" id="a7" name="a7" value="a7">
+                <label for="a7">Có một đợt đau điển hình với thời gian đau tối đa "<" 24h, khỏi triệu chứng đau "≤" 14 ngày, khỏi hoàn toàn giữa các đợt</label><br>
+                <input type="checkbox" id="a8" name="a8" value="a8">
+                <label for="a8">Phát hiện hột tophi</label><br>
+
+
+            </div>
+            <div class="box-footer">
+                <a href="CSTT2" class="btn">Quay lại</a>
+                <input type="submit" class="btn btn-primary" value="Chẩn đoán" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="images_box">
+                    <figure><img src="~/Content/images/tophi.jpg" style="float:right;" id="tophi"></figure>
+                    <label for="tophi">Hình ảnh nốt tophi</label><br />
+                </div>
+            </div>
+
+
+        </div>
+    </form>
