@@ -9,7 +9,7 @@ namespace He_thong_ho_tro_y_te.Models.DB
     [Table("User")]
     public partial class User
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+      //  [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [Required]
