@@ -42,7 +42,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit(int id, string groupid,  string name, string username, string password, HttpPostedFileBase image)
+        public ActionResult Edit(int id, string groupid,  string name, string username, string password,string describe, HttpPostedFileBase image)
         {
             var img = Path.GetFileName(image.FileName);
             UserDAO dao = new UserDAO();
@@ -52,6 +52,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
             user.Name = name;
             
             user.GroupID = groupid;
+            user.Address = describe;
             if (ModelState.IsValid)
             {
                 if (image != null && image.ContentLength > 0)
@@ -61,7 +62,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
                     image.SaveAs(path);
 
                     user.ModifiedBy = image.FileName;
-                    dao.Add(user);
+                    dao.Edit(user);
                 }
                 return RedirectToAction("Index");
             }
@@ -72,7 +73,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add( string groupid, string name, string username, string password, HttpPostedFileBase image)
+        public ActionResult Add( string groupid, string name, string username, string password,string describe, HttpPostedFileBase image)
         {
             
             var img = Path.GetFileName(image.FileName);
@@ -82,6 +83,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
             user.Password = password;
             user.Name = name;
             user.GroupID = groupid;
+            user.Address = describe;
             if (ModelState.IsValid)
             {
                 if (image != null && image.ContentLength > 0)
@@ -89,8 +91,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
                     var path = Path.Combine(Server.MapPath("~/Asset/Photo/"),
                                             System.IO.Path.GetFileName(image.FileName));
                     image.SaveAs(path);
-
-                    user.ModifiedBy = image.FileName;
+                     user.ModifiedBy = image.FileName;
                     UserDAO dao1 = new UserDAO();
                     dao1.Add(user);
                    

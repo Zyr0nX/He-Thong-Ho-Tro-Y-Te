@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hệ thống hỗ trợ y tế | Nguyen Quoc Khai</title>
+    <title>Hệ thống hỗ trợ y tế | @Session["username"]</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="~/Content/AdminLTE/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
     <link rel="stylesheet" href="~/Content/AdminLTE/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
@@ -213,10 +214,10 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                        with font-awesome or any other icon font library -->
-                        <li class="nav-item menu-close">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+    with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">
+                                <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Quản lý người dùng
                                     <i class="right fas fa-angle-left"></i>
@@ -224,28 +225,28 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="~/Admin/User/Index" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
+                                    <a href="~/Admin/User/Index" class="nav-link ">
+                                        <i class="far fa-user nav-icon"></i>
                                         <p>Quản lý tài khoản</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index2.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                        <i class="far fa-user-md nav-icon"></i>
                                         <p>Quản lý bác sĩ</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                        <i class="far fa-user-secret nav-icon"></i>
                                         <p>Quản lý bệnh nhân</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item menu-close">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-medkit"></i>
                                 <p>
                                     Quản lý sản phẩm
                                     <i class="right fas fa-angle-left"></i>
@@ -253,28 +254,28 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="~/Admin/Product/Index" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
+                                    <a href="~/Admin/Product/Index" class="nav-link">
+                                        <i class="far fa-pills nav-icon"></i>
                                         <p>Quản lý sản phẩm</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index2.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                        <i class="far fa-list nav-icon"></i>
                                         <p>Quản lý đơn hàng</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Quản lý bệnh nhân</p>
+                                        <i class="far fa-file-medical nav-icon"></i>
+                                        <p>Quản lý loại dược phẩm</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item menu-close">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-newspaper"></i>
                                 <p>
                                     Quản lý tin tức
                                     <i class="right fas fa-angle-left"></i>
@@ -282,9 +283,27 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="./index.html" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
+                                    <a href="./index.html" class="nav-link">
+                                        <i class="far fa-newspaper nav-icon"></i>
                                         <p>Quản lý tin tức</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user-clock"></i>
+                                <p>
+                                    Quản lý lịch hẹn
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">
+                                        <i class="far fa-clock nav-icon"></i>
+                                        <p>Quản lý lịch hẹn</p>
                                     </a>
                                 </li>
 
@@ -294,8 +313,11 @@
 
 
 
+
+
                     </ul>
                 </nav>
+
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->

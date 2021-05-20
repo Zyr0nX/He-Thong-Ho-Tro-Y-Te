@@ -5,7 +5,7 @@
 }
 
 
-<form action="CSTT4" method="post" role="form">
+<form action="CSTT4" method="post" role="form" style="margin-bottom:300px;margin-top:150px">
 
     <div class="row">
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 pa_right">
@@ -16,9 +16,9 @@
         </div>
         <div class="col">
             <div class="cross_inner">
-                <h3>Hệ chuyên gia<br><strong class="ornage_color">Chẩn đoán</strong></h3>
+                <h2>Hệ chuyên gia<br><strong class="ornage_color">Chẩn đoán</strong></h2>
                 <p>
-                    Bệnh nhân xuất hiện những triệu chứng nào @Session["lamsa"]
+                    Bệnh nhân xuất hiện những triệu chứng nào
                 </p>
                 <input type="checkbox" id="axit" name="axit" value="axit">
                 <label for="axit">Xét nghiệm nồng độ axit uric trong máu</label><br>
@@ -44,27 +44,30 @@
                 <label for="ha2">DECT (chụp cắt lớp vi tính năng lượng kép) scanner: bắt màu urat đặc biệt</label><br>
                 <input type="checkbox" id="xquang" name="xquang" value="xquang">
                 <label for="xquang">Xuất hiện hình ảnh bào mòn xương ở bàn tay hoặc cánh tay trên ảnh chụp Xquang</label><br>
-
+                <label ></label><br>
 
 
             </div>
-            <div></div>
-            
+
+
             <div class="box-footer">
                 <a href="CSTT3" class="btn">Quay lại</a>
                 <input type="submit" class="btn btn-primary" value="Chẩn đoán" />
             </div>
-            </div>
-
         </div>
         <div class="col">
             <div class="images_box">
-                <figure><img src="~/Content/images/bao_mon_xuong.jpg" style="float:right;" id="baomonxuong"></figure>
-                <label for="tophi">Hình ảnh bào mòn xương</label><br />
-                <figure><img src="~/Content/images/duong_doi.jpg" style="float:right;" id="duongdoi"></figure>
+                <figure><img src="~/Content/images/duong_doi.jpg" style="width: 1px; height: 1px;" ></figure>
+                <figure><img src="~/Content/images/duong_doi.jpg" style="width:250px;height:250px;" id="duongdoi"></figure>
                 <label for="duongdoi">Hình ảnh siêu âm có dấu đường đôi</label><br />
+                <figure><img src="~/Content/images/bao_mon_xuong.jpg" style="width:250px;height:250px;" id="baomonxuong"></figure>
+                <label for="tophi">Hình ảnh bào mòn xương</label><br />
+
             </div>
         </div>
+
+    </div>
+        
        
     
 </form>
