@@ -36,8 +36,6 @@ namespace He_thong_ho_tro_y_te.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
@@ -59,11 +57,11 @@ namespace He_thong_ho_tro_y_te.Controllers
             {
                 LichHenDAO dao = new LichHenDAO();
                 dao.Add(lh);
-                return RedirectToAction("Index");
+                return RedirectToAction("Contact");
             }
             else
             {
-                return View();
+                return View("Contact");
             }
         }
 
