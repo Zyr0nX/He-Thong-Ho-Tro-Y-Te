@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using He_thong_ho_tro_y_te.Models.DB;
 using He_thong_ho_tro_y_te.Models.DTO;
+using PagedList;
 
 namespace He_thong_ho_tro_y_te.Models.DAO
 {
@@ -22,7 +23,7 @@ namespace He_thong_ho_tro_y_te.Models.DAO
             db.SaveChanges();
         }
 
-        public IEnumerable<AppointmentDTO> list()
+        public IEnumerable<AppointmentDTO> list(int Pagenum, int Pagesize)
         {
             var lst = from p in db.LichHens
                       select new AppointmentDTO()
@@ -40,7 +41,7 @@ namespace He_thong_ho_tro_y_te.Models.DAO
                             GhiChu=p.GhiChu,
                             DaDuyet=p.DaDuyet
                       };
-            return lst;
+            return lst.OrderByDescending(x=>x.ID).ToPagedList(Pagenum,Pagesize);
         }
     }
 }

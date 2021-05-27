@@ -40,7 +40,7 @@
                         {
                             var item = Model.ElementAt(i);
                             <tr>
-                                <td>@i+1</td>
+                                <td>@(i+1)</td>
                                 <td>@item.TenKH</td>
                                 <td>@item.GioiTinh</td>
                                 <td>@item.NgaySinh</td>
@@ -62,16 +62,12 @@
                             </tr>
                         }
                     </tbody>
-
                 </table>
                 <div class="col-sm-7">
                     @Html.PagedListPager(Model, PageNum => Url.Action("List", new { PageNum, @searchString = @ViewBag.SearchString, @searchString2 = @ViewBag.SearchString2, @searchString3 = @ViewBag.SearchString3, @searchCat = @ViewBag.SearchCat }))
-
                 </div>
-
                 <div class="col-sm-7">
                 </div>
-
             </div>
             </div>
             <!-- /.box-body -->

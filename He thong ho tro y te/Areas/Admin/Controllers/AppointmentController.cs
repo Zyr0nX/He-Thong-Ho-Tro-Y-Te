@@ -19,7 +19,7 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
         public ActionResult List()
         {
             var model = new LichHenDAO();
-            return View(model.list());
+            return View(model.list(10,10));
         }
     }
 }
