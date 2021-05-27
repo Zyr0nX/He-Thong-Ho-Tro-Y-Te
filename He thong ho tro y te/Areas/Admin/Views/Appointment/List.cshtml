@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLTELayout.cshtml";
+}
+@model PagedList.IPagedList<He_thong_ho_tro_y_te.Models.DTO.AppointmentDTO>
+@using PagedList.Mvc
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="box-body">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Quản lý lịch hẹn</h3>
+                </div>
+            </div>
+            <!-- /search form -->
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên khách hàng</th>
+                            <th>Giới tính</th>
+                            <th>Ngày sinh</th>
+                            <th>Địa chỉ</th>
+                            <th>Thư điện tử</th>
+                            <th>Số điện thoại</th>
+                            <th>Khoa khám</th>
+                            <th>Giờ hẹn</th>
+                            <th>Ngày hẹn</th>
+                            <th>Ghi chú</th>
+                            <th>Duyệt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (var i = 0; i < Model.Count; i++)
+                        {
+                            var item = Model.ElementAt(i);
+                            <tr>
+                                <td>@i+1</td>
+                                <td>@item.TenKH</td>
+                                <td>@item.GioiTinh</td>
+                                <td>@item.NgaySinh</td>
+                                <td>@item.DiaChi</td>
+                                <td>@item.ThuDienTu</td>
+                                <td>@item.SoDienThoai</td>
+                                <td>@item.KhoaKham</td>
+                                <td>@item.GioHen</td>
+                                <td>@item.NgayHen</td>
+                                <td>@item.GhiChu</td>
+                                @if (item.DaDuyet == true)
+                                {
+                                    <td>Đã duyệt</td>
+                                }
+                                else
+                                {
+                                    <td><a href="~/Admin/Appointment/Duyet">Duyệt  </a></td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+                <div class="col-sm-7">
+                    @Html.PagedListPager(Model, PageNum => Url.Action("List", new { PageNum, @searchString = @ViewBag.SearchString, @searchString2 = @ViewBag.SearchString2, @searchString3 = @ViewBag.SearchString3, @searchCat = @ViewBag.SearchCat }))
+
+                </div>
+
+                <div class="col-sm-7">
+                </div>
+
+            </div>
+            </div>
+            <!-- /.box-body -->
+
+        </div>
+        <!-- /.box -->
+        <!-- /.box -->
+    </div>
+    <!-- /.col -->
+
+</div>
+<!-- /.row -->

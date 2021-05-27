@@ -194,3 +194,120 @@ D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongH
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.Threading.Tasks.Extensions.xml
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\bin\System.ValueTuple.xml
 D:\K17\Nam3-ki2\He thong thong tin y te\New folder\He thong ho tro y te\HeThongHoTroYTe\He thong ho tro y te\obj\Debug\He thong ho tro y te.csprojAssemblyReference.cache
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\He thong ho tro y te.dll.config
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\He thong ho tro y te.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\He thong ho tro y te.pdb
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\csc.exe
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\csc.exe.config
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\csc.rsp
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\csi.exe
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\csi.exe.config
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\csi.rsp
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.AppContext.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Console.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.IO.Compression.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Net.Http.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Net.Sockets.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.ValueTuple.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Xml.XPath.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\vbc.exe
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\vbc.exe.config
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\vbc.rsp
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\VBCSCompiler.exe
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Antlr3.Runtime.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Autofac.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Config.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Core.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Host.Owin.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.FileSystem.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.FileSystem.Local.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\EntityFramework.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\EntityFramework.SqlServer.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\ImageProcessor.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Microsoft.Owin.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Newtonsoft.Json.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Owin.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\PagedList.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\PagedList.Mvc.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Pri.LongPath.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Net.Http.Extensions.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Net.Http.Formatting.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Net.Http.Primitives.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.ValueTuple.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.Helpers.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.Mvc.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.Optimization.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.Razor.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.WebPages.Deployment.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.WebPages.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.WebPages.Razor.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\WebGrease.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Autofac.pdb
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Autofac.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Config.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Core.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.CKFinder.Connector.Host.Owin.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.FileSystem.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\CKSource.FileSystem.Local.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\EntityFramework.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\EntityFramework.SqlServer.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\ImageProcessor.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Microsoft.Owin.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\PagedList.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\PagedList.Mvc.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.ValueTuple.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.Helpers.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.Mvc.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.Optimization.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.Razor.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.WebPages.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.WebPages.Deployment.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\System.Web.WebPages.Razor.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Newtonsoft.Json.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Antlr3.Runtime.pdb
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\obj\Debug\He thong ho tro y te.csproj.AssemblyReference.cache
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\obj\Debug\He thong ho tro y te.csproj.CoreCompileInputs.cache
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\obj\Debug\He thong ho tro y te.csproj.CopyComplete
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\obj\Debug\He thong ho tro y te.dll
+C:\Users\duydh\Documents\GitHub\He-Thong-Ho-Tro-Y-Te-Fork\He thong ho tro y te\obj\Debug\He thong ho tro y te.pdb

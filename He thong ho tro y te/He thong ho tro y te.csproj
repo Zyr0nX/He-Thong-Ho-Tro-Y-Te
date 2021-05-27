@@ -189,6 +189,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AppointmentController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
@@ -202,6 +203,7 @@
     <Compile Include="Models\DAO\CategoryDAO.cs" />
     <Compile Include="Models\DAO\GioHangHoa.cs" />
     <Compile Include="Models\DAO\HangHoaBan.cs" />
+    <Compile Include="Models\DAO\LichHenDAO.cs" />
     <Compile Include="Models\DAO\ProductDAO.cs" />
     <Compile Include="Models\DAO\UserDAO.cs" />
     <Compile Include="Models\DAO\UserGroupDAO.cs" />
@@ -212,12 +214,14 @@
     <Compile Include="Models\DB\DetailBill.cs" />
     <Compile Include="Models\DB\Doctor.cs" />
     <Compile Include="Models\DB\Feedback.cs" />
+    <Compile Include="Models\DB\LichHen.cs" />
     <Compile Include="Models\DB\News.cs" />
     <Compile Include="Models\DB\Patient.cs" />
     <Compile Include="Models\DB\Product.cs" />
     <Compile Include="Models\DB\User.cs" />
     <Compile Include="Models\DB\UserGroup.cs" />
     <Compile Include="Models\DB\YTeDbContext.cs" />
+    <Compile Include="Models\DTO\AppointmentDTO.cs" />
     <Compile Include="Models\DTO\ProductDTO.cs" />
     <Compile Include="Models\DTO\UserDTO.cs" />
     <Compile Include="Models\Gout.cs" />
@@ -2952,6 +2956,7 @@
     <Content Include="Areas\Admin\Views\User\Add.cshtml" />
     <Content Include="Areas\Admin\Views\User\Index.cshtml" />
     <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Appointment\List.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2998,6 +3003,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Views\LichHen\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
