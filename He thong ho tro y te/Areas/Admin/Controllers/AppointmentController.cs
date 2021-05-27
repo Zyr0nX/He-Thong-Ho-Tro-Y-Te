@@ -16,10 +16,17 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
             return View();
         }
 
-        public ActionResult List()
+        public ActionResult List(int PageNum = 1, int PageSize = 5)
         {
             var model = new LichHenDAO();
-            return View(model.list(10,10));
+            return View(model.list(PageNum, PageSize));
+        }
+
+        [HttpGet]
+        public ActionResult Duyet(int id)
+        {
+            LichHenDAO.Duyet(id);
+            return RedirectToAction("List");
         }
     }
 }

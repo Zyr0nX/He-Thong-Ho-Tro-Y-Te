@@ -75,7 +75,7 @@ namespace He_thong_ho_tro_y_te.Models.DAO
             {
                 get { return db.Products;}
             }
-        public IEnumerable<Product> ListProductPage(string searchString, string searchString2,string searchString3,string searchCat,  int Pagenum, int Pagesize)
+        public IEnumerable<Product> ListProductPage(string searchString, string searchString2,string searchString3,string searchCat, int Pagenum, int Pagesize)
             {
             IQueryable<Product> model = db.Products;
 

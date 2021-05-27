@@ -10,7 +10,7 @@ namespace He_thong_ho_tro_y_te.Models.DAO
 {
     public class LichHenDAO
     {
-        private YTeDbContext db;
+        private static YTeDbContext db;
 
         public LichHenDAO()
         {
@@ -42,6 +42,18 @@ namespace He_thong_ho_tro_y_te.Models.DAO
                             DaDuyet=p.DaDuyet
                       };
             return lst.OrderByDescending(x=>x.ID).ToPagedList(Pagenum,Pagesize);
+        }
+
+        public static void Duyet(int id)
+        {
+            var duyet = from p in db.LichHens
+                        where p.ID==id
+                        select p;
+            foreach (var item in duyet)
+            {
+                item.DaDuyet = true;
+            }
+            db.SaveChanges();
         }
     }
 }
