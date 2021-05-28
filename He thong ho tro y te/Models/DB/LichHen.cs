@@ -17,7 +17,7 @@ namespace He_thong_ho_tro_y_te.Models.DB
         [StringLength(5)]
         public string GioiTinh { get; set; }
 
-        [Column(TypeName = "date")]
+       // [Column(TypeName = "date")]
         public DateTime? NgaySinh { get; set; }
 
         [StringLength(50)]
@@ -35,7 +35,7 @@ namespace He_thong_ho_tro_y_te.Models.DB
         [StringLength(50)]
         public string GioHen { get; set; }
 
-        [Column(TypeName = "date")]
+      //  [Column(TypeName = "date")]
         public DateTime? NgayHen { get; set; }
 
         [Column(TypeName = "ntext")]

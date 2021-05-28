@@ -22,7 +22,21 @@ namespace He_thong_ho_tro_y_te.Models.DAO
             if (a >= 1) check = true;
             return check;
         }
+        public int checkLoginHome(string username,string password)
+        {
 
+           
+            var a = db.Users.SingleOrDefault(y => y.UserName == username && y.Password == password);
+            if (a == null) return 0;
+            else
+            {
+                if (a.GroupID == "ADMIN") return 1;
+                else if (a.GroupID == "DOCTOR") return 2;
+                else return 0;
+            }
+            
+
+        }
 
         public void Delete(int id)
         {

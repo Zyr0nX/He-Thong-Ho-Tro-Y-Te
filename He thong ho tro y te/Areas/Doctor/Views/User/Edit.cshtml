@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Edit";
-    Layout = "~/Areas/Admin/Views/Shared/AdminLTELayout.cshtml";
+    Layout = "~/Areas/Doctor/Views/Shared/AdminLTELayout.cshtml";
 }
 
 
@@ -14,7 +14,7 @@
     <input type="hidden" id="id" name="id" value="@user.ID" />
     <div class="box box-default">
         <div class="box-header with-border">
-            <h3 class="box-title">Chỉnh sửa người dùng </h3>
+            <h3 class="box-title">Chỉnh sửa bệnh nhân </h3>
 
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -42,17 +42,10 @@
                      <div class="form-group">
                         <label>Loại người dùng</label>
                         <select class="form-control" name="groupid">
-                            @foreach (var item in ViewBag.group)
-                            {
+                            
+                                <option>Bệnh nhân</option>
 
-                                var select = "";
-                                if (item.Id == user.GroupID)
-                                {
-                                    select = "selected";
-                                }
-                                <option @select value="@item.Id">@item.Name</option>
-
-                            }
+                            
                         </select>
                     </div>
                     <!-- /.form-group -->

@@ -193,6 +193,9 @@
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Areas\Doctor\Controllers\AppointmentController.cs" />
+    <Compile Include="Areas\Doctor\Controllers\UserController.cs" />
+    <Compile Include="Areas\Doctor\DoctorAreaRegistration.cs" />
     <Compile Include="Controllers\HeChuyenGiaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ShopController.cs" />
@@ -2957,6 +2960,15 @@
     <Content Include="Areas\Admin\Views\User\Index.cshtml" />
     <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Appointment\List.cshtml" />
+    <Content Include="Areas\Doctor\Views\web.config" />
+    <Content Include="Areas\Doctor\Views\Appointment\List.cshtml" />
+    <Content Include="Areas\Doctor\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Doctor\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Doctor\Views\User.cshtml" />
+    <Content Include="Areas\Doctor\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Doctor\Views\User\Add.cshtml" />
+    <Content Include="Areas\Doctor\Views\User\Index.cshtml" />
+    <Content Include="Areas\Doctor\Views\Shared\AdminLTELayout.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2986,7 +2998,6 @@
     <Content Include="Views\Home\Shop.cshtml" />
     <Content Include="Views\Home\HeChuyenGia.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\User\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Views\Shop\Index.cshtml" />
@@ -3003,7 +3014,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Doctor\Data\" />
     <Folder Include="Views\LichHen\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

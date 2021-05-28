@@ -3,18 +3,93 @@
     ViewBag.Title = "Liên hệ";
 }
 
-@{ 
+@{
     Layout = "~/Views/Shared/HomeTemplate.cshtml";
 }
+
 <div id="contact" class="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
-                    <h2>Contact <strong class="llow">us</strong></h2>
+                    <h2>Liên hệ <strong class="llow">với chúng tôi</strong></h2>
                 </div>
             </div>
 
+        </div>
+        <div class="col">
+            <form class="contact_bg" action="Add" method="post" role="form" style="border: 4px solid #fff; border-radius: 10px; list-style: outside none none; margin-left: 800px; padding: 0 10px;  right: 15px; width: 190px;">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+                    Đặt lịch hẹn
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Đặt lịch hẹn</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-md-12">
+                                    <div class="col-md-12">
+                                        <input class="contactus" placeholder="Họ tên" type="text" name="TenKH">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="contactus" placeholder="Giới tính" type="text" name="GioiTinh">
+                                    </div>
+                                    <div class="col-md-12">
+                                        @*<input class="contactus" placeholder="Ngày sinh" type="text" name="NgaySinh">*@
+                                        <input class="contactus" type="datetime-local" placeholder="Ngày sinh" id="birthdaytime" name="NgaySinh">
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <input class="contactus" placeholder="Địa chỉ" type="text" name="DiaChi">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="contactus" placeholder="Thư điện tử" type="text" name="ThuDienTu">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="contactus" placeholder="Số điện thoại" type="text" name="SoDienThoai">
+                                    </div>
+                                    <div class="col-md-12">
+                                        @*<input class="contactus" placeholder="Khoa khám" type="text" name="KhoaKham">*@
+                                        <select class="contactus" placehorder="Khoa khám" name="KhoaKham">
+                                            <option value="Chưa chọn khoa khám">Chọn khoa khám</option>
+                                            <option value="Khoa nội">Khoa nội</option>
+                                            <option value="Khoa nhi">Khoa nhi</option>
+                                            <option value="Khoa ngoại">Khoa ngoại</option>
+                                            <option value="Khoa chuẩn đoán hình ảnh">Khoa chuẩn đoán hình ảnh</option>
+
+                                        </select>
+                                    </div>
+
+
+                                    @*<div class="col-md-12">
+                                        <input class="contactus" placeholder="Giờ hẹn" type="text" name="GioHen">
+                                    </div>*@
+                                    <div class="col-md-12">
+                                        @*<input class="contactus" placeholder="Ngày hẹn" type="text" name="NgayHen">*@
+                                        <input class="contactus" type="datetime-local" placeholder="Ngày hẹn" name="NgayHen">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="contactus" placeholder="Ghi chú" type="text" name="GhiChu">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                <input type="submit" class="btn btn-primary" value="Gửi" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="white_color">
             <div class="row">
@@ -25,82 +100,21 @@
                             <div class="col-md-12">
 
                                 <div class="col-md-12">
-                                    <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
+                                    <input class="contactus" placeholder="Tên khách hàng" type="text" name="Tên khách hàng">
                                 </div>
                                 <div class="col-md-12">
                                     <input class="contactus" placeholder="Email" type="text" name="Email">
                                 </div>
                                 <div class="col-md-12">
-                                    <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number">
+                                    <input class="contactus" placeholder="Số điện thoại"type="text" name="Số điện thoại">
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                                    <textarea class="textarea" placeholder="Nội dung" type="text" name="Nội dung"></textarea>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <button class="send">Send</button>
+                                    <button class="send">Gửi</button>
                                 </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <form class="contact_bg" action="Add" method="post" role="form">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Đặt lịch hẹn
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="col-md-12">
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Họ tên" type="text" name="TenKH">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Giới tính" type="text" name="GioiTinh">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Ngày sinh" type="text" name="NgaySinh">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Địa chỉ" type="text" name="DiaChi">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Thư điện tử" type="text" name="ThuDienTu">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Số điện thoại" type="text" name="SoDienThoai">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Khoa khám" type="text" name="KhoaKham">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Giờ hẹn" type="text" name="GioHen">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Ngày hẹn" type="text" name="NgayHen">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input class="contactus" placeholder="Ghi chú" type="text" name="GhiChu">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <input type="submit" class="btn btn-primary" value="Send"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </form>
                 </div>
             </div>
@@ -113,4 +127,5 @@
     </div>
 
 </div>
+    </div>
 

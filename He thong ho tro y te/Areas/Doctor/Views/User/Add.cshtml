@@ -1,20 +1,33 @@
 ﻿
 @{
-    ViewBag.Title = "Edit";
-    Layout = "~/Areas/Admin/Views/Shared/AdminLTELayout.cshtml";
+    ViewBag.Title = "Add";
+    Layout = "~/Areas/Doctor/Views/Shared/AdminLTELayout.cshtml";
 }
 
 
-@using He_thong_ho_tro_y_te.Models.DB;
-@{
-    var user = (User)ViewBag.user;
-}
+@model List<He_thong_ho_tro_y_te.Models.DB.UserGroup>
 
-<form action="Edit" method="post" role="form" enctype="multipart/form-data">
-    <input type="hidden" id="id" name="id" value="@user.ID" />
+@*@section jsFooter{
+        <script>
+            $('#btnSelectImage').on('click', function (e) {
+                e.preventDefault();
+                var finder = new CKFinder();
+                finder.selectActionFunction = function (url) {
+                    $('#txtImage').val(url);
+                };
+                finder.popup();
+            })
+
+            //var editor = CKEDITOR.replace('txtContent', {
+            //    customConfig: '/assets/admin/js/plugins/ckeditor/config.js',
+            //});
+        </script>
+    }*@
+
+<form action="Add" method="post" role="form" enctype="multipart/form-data">
     <div class="box box-default">
         <div class="box-header with-border">
-            <h3 class="box-title">Chỉnh sửa người dùng </h3>
+            <h3 class="box-title">Thêm mới </h3>
 
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -29,37 +42,31 @@
                     <!-- /.form-group -->
                     <div class="form-group">
                         <label for="name">Tên người dùng</label>
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Tên sản phẩm" value="@user.Name">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Nguyễn Văn A">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Tên đăng nhập</label>
-                        <input type="text" class="form-control" name="username" id="username" placeholder="admin" value="@user.UserName">
+                        <label for="">Tên đăng nhập</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="admin">
                     </div>
                     
                 </div>
                 <!-- /.col -->
                 <div class="col-md-6">
-                     <div class="form-group">
+
+                    <div class="form-group">
                         <label>Loại người dùng</label>
                         <select class="form-control" name="groupid">
-                            @foreach (var item in ViewBag.group)
-                            {
-
-                                var select = "";
-                                if (item.Id == user.GroupID)
-                                {
-                                    select = "selected";
-                                }
-                                <option @select value="@item.Id">@item.Name</option>
-
-                            }
+                            
+                                <option>Bệnh nhân</option>
+                           
                         </select>
                     </div>
-                    <!-- /.form-group -->
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Mật khẩu</label>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="123456" value="@user.Password">
+                        <label for="">Mật khẩu</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="123456">
                     </div>
+                    <!-- /.form-group -->
+
                 </div>
                 <!-- /.col -->
 
@@ -71,13 +78,13 @@
                     <div class="form-group">
                         <label for="exampleInputFile">Chọn ảnh</label>
                         <input type="file" id="image" name="image">
-                        <p class="help-block"><img height="100px" src="~/Asset/Photo/@user.ModifiedBy" /></p>
-
+                        <p class="help-block">Chọn ảnh của sản phẩm</p>
                     </div>
+
 
                     <div class="form-group">
                         <label>Mô tả</label>
-                        <textarea name="describe" id="describe" class="form-control" rows="3">@user.</textarea>
+                        <textarea name="describe" id="description" class="form-control" rows="3" placeholder="Thêm mô tả ..."></textarea>
                     </div>
                 </div>
             </div>
@@ -89,6 +96,8 @@
     <div class="box-footer">
         <input type="submit" class="btn btn-primary" value="Thêm" />
     </div>
+    <script src="/CKFinderScripts/ckfinder.js"></script>
+
 </form>
 
 

@@ -28,12 +28,29 @@ namespace He_thong_ho_tro_y_te.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Login(string username, string password)
         {
+            //UserDAO dao = new UserDAO();
+
+            //if (dao.checkLogin(username, password))
+            //{
+            //    Session["username"] = username;
+            //    return Redirect("~/Home/Index");
+
+            //}
+            //else return Redirect("Login");
             UserDAO dao = new UserDAO();
-            if (dao.checkLogin(username, password))
+            var result = dao.checkLoginHome(username, password);
+            if (result == 1)
             {
                 Session["username"] = username;
+                Session["groupid"] = "ADMIN";
                 return Redirect("~/Home/Index");
 
+            }
+            else if (result == 2)
+            {
+                Session["groupid"] = "DOCTOR";
+                Session["username"] = username;
+                return Redirect("~/Home/Index");
             }
             else return Redirect("Login");
         }

@@ -1,11 +1,12 @@
-﻿namespace He_thong_ho_tro_y_te.Models.DB
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.Spatial;
+namespace He_thong_ho_tro_y_te.Models.DB
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
+    
 
     [Table("Product")]
     public partial class Product

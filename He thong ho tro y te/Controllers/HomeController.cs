@@ -40,18 +40,20 @@ namespace He_thong_ho_tro_y_te.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(string tenkh, string gioitinh, string ngaysinh, string diachi, string thudientu, string sodienthoai, string khoakham, string giohen, string ngayhen, string ghichu)
+        public ActionResult Add(string tenkh, string gioitinh, DateTime ngaysinh, string diachi, string thudientu, string sodienthoai, string khoakham, string giohen, DateTime ngayhen, string ghichu)
         {
             LichHen lh = new LichHen();
             lh.TenKH = tenkh;
             lh.GioiTinh = gioitinh;
-            lh.NgaySinh = DateTime.ParseExact(ngaysinh, "dd/MM/yyyy", null);   
+            // lh.NgaySinh = DateTime.ParseExact(ngaysinh, "dd/MM/yyyy", null);   
+            lh.NgaySinh = ngaysinh;
             lh.DiaChi = diachi;
             lh.ThuDienTu = thudientu;
             lh.SoDienThoai = sodienthoai;
             lh.KhoaKham = khoakham;
-            lh.GioHen = giohen;
-            lh.NgayHen = DateTime.ParseExact(ngayhen, "dd/MM/yyyy", null);;
+            //lh.GioHen = giohen;
+            //  lh.NgayHen = DateTime.ParseExact(ngayhen, "dd/MM/yyyy", null);;
+            lh.NgayHen = ngayhen;
             lh.GhiChu = ghichu;
             if (ModelState.IsValid)
             {
