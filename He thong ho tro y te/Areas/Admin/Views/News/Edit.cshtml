@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Sửa tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLTELayout.cshtml";
+}
+
+@using He_thong_ho_tro_y_te.Models.DB;
+@{
+    var ne = (News)ViewBag.pro;
+}
+
+<form action="Edit" method="post" role="form" enctype="multipart/form-data">
+    <input type="hidden" id="id" name="id" value="@ne.ID" />
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title">Chỉnh sửa tin tức </h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name"> Tiêu đề</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Tiêu đề tin tức" value="@ne.Name">
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label for="detail">Nội dung</label>
+                        <textarea rows="4" cols="50" name="detail" id="Detail"></textarea>
+                    </div>
+                </div>
+                <!-- /.col -->
+                <!-- /.col -->
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="form-group">
+                        <label for="exampleInputFile">Chọn ảnh</label>
+                        <input type="file" id="image" name="image">
+                        <p class="help-block"><img height="100px" src="~/Asset/Photo/@ne.Image" /></p>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+
+    </div>
+    <div class="box-footer">
+        <input type="submit" class="btn btn-primary" value="Sửa" />
+    </div>
+</form>
+<script src="/CKFinderScripts/ckfinder.js"></script>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
+
+<Script>
+    CKEDITOR.replace('detail');
+</Script>
+

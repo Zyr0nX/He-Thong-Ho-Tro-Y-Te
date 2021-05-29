@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Thêm tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLTELayout.cshtml";
+}
+
+
+
+
+<form action="Add" method="post" role="form" enctype="multipart/form-data">
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title">Thêm mới </h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Tiêu đề</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Tiêu đề">
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label for="Detail">Nội dung</label>
+                        @*<input type="text" class="form-control" name="detail" id="Detail" placeholder="Nhập nội dung">*@
+                        <textarea rows="4" cols="50" name="detail" id="Detail" ></textarea>
+                    </div>
+                </div>
+                <!-- /.col -->
+                <!-- /.col -->
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="form-group">
+                        <label for="exampleInputFile">Chọn ảnh</label>
+                        <input type="file" id="image" name="image">
+                        <p class="help-block">Chọn ảnh bìa tin tức</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+
+    </div>
+    <div class="box-footer">
+        <input type="submit" class="btn btn-primary" value="Thêm mới tin tức" />
+    </div>
+
+</form>
+
+
+
+<script src="/CKFinderScripts/ckfinder.js"></script>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
+<Script>
+    CKEDITOR.replace('Detail');
+</Script>

@@ -20,7 +20,7 @@ namespace He_thong_ho_tro_y_te.Models.DAO
             return db.Products.ToList();
         }
         public void Add(Product pro)
-        {
+        {   
             db.Products.Add(pro);
             db.SaveChanges();
             
