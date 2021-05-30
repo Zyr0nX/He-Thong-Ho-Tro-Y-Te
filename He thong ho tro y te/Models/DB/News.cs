@@ -1,17 +1,19 @@
-namespace He_thong_ho_tro_y_te.Models.DB
+﻿namespace He_thong_ho_tro_y_te.Models.DB
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
     public partial class News
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long ID { get; set; }
+        
+        public int ID { get; set; }
 
         [StringLength(250)]
+        [DisplayName("Tiêu đề")]
         public string Name { get; set; }
 
         [StringLength(250)]
@@ -21,11 +23,13 @@ namespace He_thong_ho_tro_y_te.Models.DB
         public string Description { get; set; }
 
         [StringLength(250)]
+        [DisplayName("Ảnh bìa")]
         public string Image { get; set; }
-
+      
         public long? CategoryID { get; set; }
 
         [Column(TypeName = "ntext")]
+        [DisplayName("Nội dung")]
         public string Detail { get; set; }
 
         public DateTime? CreatedDate { get; set; }

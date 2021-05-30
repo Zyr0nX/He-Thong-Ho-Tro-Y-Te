@@ -9,31 +9,33 @@
 
 
 <body>
-    @ViewBag.count
-    @foreach (var item in Model)
-    {
+    <div style="margin-bottom:800px;margin-top:100px; margin-left:100px;margin-right:100px;">
+        @ViewBag.count
+        @foreach (var item in Model)
+        {
 
-        <div class="cart-grid" id="cart-1">
-            <div class="img">
-                <img src="~/Asset/Photo/@item.Image" alt="img">
+            <div class="cart-grid" id="cart-1">
+                <div class="img">
+                    <img src="~/Asset/Photo/@item.Image" alt="img">
+                </div>
+                <ul class="info">
+                    <li>$60.00</li>
+                    <li class="right-text">@item.Price</li>
+                </ul>
+                <div class="snipcart-details ">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="w3l_item" value="Striped Top ">
+                        <input type="hidden" name="amount" value="25.00">
+                        <input type="hidden" name="item_name" value="Product #001" />
+                        <button type="submit" class="button w3l-cart" data-id="cart-1">add to cart</button>
+
+                    </form>
+                </div>
             </div>
-            <ul class="info">
-                <li>$60.00</li>
-                <li class="right-text">@item.Price</li>
-            </ul>
-            <div class="snipcart-details ">
-                <form action="#" method="post">
-                    <input type="hidden" name="cmd" value="_cart">
-                    <input type="hidden" name="add" value="1">
-                    <input type="hidden" name="w3l_item" value="Striped Top ">
-                    <input type="hidden" name="amount" value="25.00">
-                    <input type="hidden" name="item_name" value="Product #001" />
-                    <button type="submit" class="button w3l-cart" data-id="cart-1">add to cart</button>
-                  
-                </form>
-            </div>
-        </div>
-    }
+        }
+    </div>
 
 </body>
 <style>

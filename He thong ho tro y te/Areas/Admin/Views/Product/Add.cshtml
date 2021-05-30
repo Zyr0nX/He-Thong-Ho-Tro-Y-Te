@@ -6,22 +6,7 @@
 
 @model List<He_thong_ho_tro_y_te.Models.DB.Category>
 
-@*@section jsFooter{
-    <script>
-        $('#btnSelectImage').on('click', function (e) {
-            e.preventDefault();
-            var finder = new CKFinder();
-            finder.selectActionFunction = function (url) {
-                $('#txtImage').val(url);
-            };
-            finder.popup();
-        })
 
-        //var editor = CKEDITOR.replace('txtContent', {
-        //    customConfig: '/assets/admin/js/plugins/ckeditor/config.js',
-        //});
-    </script>
-}*@
 
 <form action="Add" method="post" role="form" enctype="multipart/form-data">
     <div class="box box-default">
@@ -93,7 +78,7 @@
     <div class="box-footer">
         <input type="submit" class="btn btn-primary" value="Thêm" />
     </div>
-    <script src="/CKFinderScripts/ckfinder.js"></script>
+   
        
 </form>
 

@@ -27,6 +27,7 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="~/Content/css/jquery.mCustomScrollbar.min.css">
 
+
 </head>
 <!-- body -->
 
@@ -87,10 +88,18 @@
                                                         @Session["username"]
                                                         <i class="fa fa-caret-down"></i>
                                                     </li>
-                                                        <li>
-
+                                                    <li>
+                                                        @if (Session["groupid"].ToString() == "ADMIN")
+                                                        {
                                                             <a href="~/Admin/Admin/Index">Quản trị </a>
-                                                        </li>
+                                                        }
+                                                        else if (Session["groupid"].ToString() == "DOCTOR")
+                                                        {
+                                                            <a href="~/Doctor/User/Index">Quản trị </a>
+                                                        }
+                                                        else { <a href="~/Home/Index">Quản trị </a>}
+
+                                                    </li>
                                                         <li>
                                                             <a href="~/Admin/Admin/Logout">Đăng xuất </a>
                                                         </li>
